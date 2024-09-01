@@ -14,9 +14,12 @@ class CircleShape(pygame.sprite.Sprite):
         self.radius = radius
 
     def draw(self, screen):
-        # sub-classes must override
+        # for sub-classes to override
         pass
 
     def update(self, dt):
-        # sub-classes must override
+        # for sub-classes to override
         pass
+
+    def collision(self, other):
+        return self.position.distance_to(other.position) < self.radius + other.radius
