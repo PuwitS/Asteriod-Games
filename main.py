@@ -39,7 +39,6 @@ def main():
                 pass
                 #print("Game Over!")
                 #sys.exit()
-                #return
                 
             for bullet in shots:
                 if asteroid.collision(bullet):
@@ -57,3 +56,17 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+'''
+Could add:
+-Scoring system
+-live and respawning
+-effects(mainly astroid explode)
+-acceleration to player movement
+-object wrap around the screen instead of disappearing
+-more weapons!
+-differnet asteroid shape
+-fix player hitbox
+-power ups!
+-main menu, gameover screen
+'''
